@@ -28,7 +28,7 @@ function Navbar() {
         }
       }}>
         <Box id='nav_title'>
-          Nebula AWS Consulting
+          Nebula AWS Consulting Blogs
         </Box>
         <Box id='nav_items'>
           <Box>Home</Box>
