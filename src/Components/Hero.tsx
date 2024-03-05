@@ -42,11 +42,11 @@ function Hero() {
             <Typography sx={{padding: '1.5rem'}}>At Nebula AWS Consulting, we are dedicated to empowering businesses with innovative cloud solutions and strategic consulting services tailored to their unique needs.Our commitment to excellence, coupled with our deep industry knowledge and technical expertise, enables us to deliver exceptional results and drive sustainable success for our clients. Whether you're embarking on your cloud journey or seeking to maximize the value of your existing AWS environment, Nebula AWS Consulting is your trusted partner for transformative cloud solutions and strategic guidance.</Typography>
         </Box>
       </Box>
-      <Box sx={{height: '0.3rem', width: '80%', display: 'flex', alignItems: 'center', backgroundColor:'#D9D9D9', marginTop: '2rem', borderRadius: '8px'}}></Box>
+      <Box sx={{height: '0.3rem', width: '80%', display: 'flex', alignItems: 'center', backgroundColor:'#D9D9D9', marginTop: '4rem', borderRadius: '8px'}}></Box>
       <Box sx={{
           display: 'flex',
           flexDirection: 'row',
-          marginTop: '2rem'
+          marginTop: '4rem'
       }}>
         <Paper onClick={() => navigate('/business')} sx={{
             display: 'flex',
