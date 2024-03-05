@@ -7,6 +7,8 @@ function Footer() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginTop: '4rem',
+        height: '500px',
         backgroundColor: '#D9D9D9',
         '& > *': {
             display: 'flex',

@@ -8,13 +8,16 @@ function BusinessPage() {
 
   return (
     <>
-      <Box>
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '2rem'
+      }}>
         {businessBlogs.map((blog) => (
-          <Box onClick={() => navigate(`/business/${blog.id}`)}>
+          <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
             <Blog_Cards
               title={blog.title}
-              author={blog.author}
-              textContent={blog.textContent}
               introTextContent={blog.introTextContent}
               image={blog.image}
               id={blog.id}
