@@ -1,15 +1,15 @@
 import { Box } from "@mui/material"
 import { useParams } from "react-router-dom"
-import { businessBlogs } from "../Blogs/BusinessBlogs"
+import { cloudBlogs } from "../Blogs/CloudBlogs"
 
-function BlogPage() {
+function CloudBlogPage() {
     const { id = '' } = useParams()
     const blogId = parseInt(id)
 
     const grabBlog = () => {
-      for (let i = 0; i < businessBlogs.length; i++){
-        if(businessBlogs[i].id === blogId){
-          return businessBlogs[i]
+      for (let i = 0; i < cloudBlogs.length; i++){
+        if(cloudBlogs[i].id === blogId){
+          return cloudBlogs[i]
         }
       }
       return null
@@ -21,39 +21,35 @@ function BlogPage() {
       throw new Error("Blog not found");
   }
 
-  console.log(blog.image)
+  console.log(`${blog.image}`)
 
   return (
     <Box sx={{
       display: 'flex',
+      flexDirection: 'row',
       flexWrap: 'wrap'
     }}>
-      {blog && (
-        <>
         <Box sx={{
-          flex: '1',
+          flex: '1 1 50%',
           maxWidth: '50%',
           '& > *': {
             width: '100%',
-            height: 'auto'
+            height: '500px'
           }
         }}>
-          <img src={blog.image} alt={blog.title} />
+          <img src={`${blog.image}`} alt={blog.title} />
         </Box>
         <Box sx={{
-          flex: '1',
+          flex: '1 1 50%',
           maxWidth: '50%',
           paddingX: '1rem'
         }}>
            <h2>{blog.title}</h2>
            <p>Author: {blog.author}</p>
            <p>{blog.textContent}</p>
-           <p>{blog.introTextContent}</p>
         </Box>
-        </>
-      )}
     </Box>
   )
 }
 
-export default BlogPage
+export default CloudBlogPage

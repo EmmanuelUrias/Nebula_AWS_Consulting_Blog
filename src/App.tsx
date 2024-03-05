@@ -10,8 +10,9 @@ import BusinessPage from './Pages/BusinessPage'
 import Mobile_BusinessPage from './Mobile_Pages/Mobile_BusinessPage'
 import CloudPage from './Pages/CloudPage'
 import Mobile_CloudPage from './Mobile_Pages/Mobile_CloudPage'
-import BlogPage from './Pages/BlogPage'
+import BusinessBlogPage from './Pages/BusinessBlogPage'
 import Mobile_BlogPage from './Mobile_Pages/Mobile_BlogPage'
+import CloudBlogPage from './Pages/CloudBlogPage'
 import ContactUs from './Pages/ContactUs'
 import Mobile_ContactPage from './Mobile_Pages/Mobile_ContactPage'
 import { useState } from 'react'
@@ -26,8 +27,9 @@ function App() {
       <Routes>
         <Route path='/' element={isBigScreen ? <HomePage/> : <Mobile_HomePage />}/>
         <Route path='/business' element={isBigScreen ? <BusinessPage/> : <Mobile_BusinessPage />}/>
-        <Route path='/business/:id' element={isBigScreen ? <BlogPage/> : <Mobile_BlogPage />}/>
+        <Route path='/business/:id' element={isBigScreen ? <BusinessBlogPage/> : <Mobile_BlogPage />}/>
         <Route path='/cloud' element={isBigScreen ? <CloudPage/> : <Mobile_CloudPage />}/>
+        <Route path='/cloud/:id' element={isBigScreen ? <CloudBlogPage/> : <Mobile_BlogPage />}/>
         <Route path='/contactus' element={isBigScreen ? <ContactUs/> : <Mobile_ContactPage />}/>
       </Routes>
       {isBigScreen ? <Footer /> : <Mobile_Footer/>}
