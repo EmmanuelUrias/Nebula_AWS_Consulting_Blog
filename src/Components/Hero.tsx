@@ -1,5 +1,6 @@
 import { Box, Typography, Paper } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import Clouds from './Clouds'
 
 function Hero() {
     const navigate = useNavigate()
@@ -99,6 +100,14 @@ function Hero() {
             </Box>
         </Paper>
       </Box>
+      <Clouds 
+        cloudOneTop='-130px'
+        cloudOneRight='500px'
+        cloudTwoTop='0px'
+        cloudTwoRight='120px'
+        cloudThreeTop='-200px'
+        cloudThreeRight='-470px'
+      />
     </Box>
   )
 }

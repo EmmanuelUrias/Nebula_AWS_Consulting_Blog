@@ -2,6 +2,7 @@ import { Box } from "@mui/material"
 import Blog_Cards from "../Components/Blog_Cards"
 import { cloudBlogs } from "../Blogs/CloudBlogs"
 import { useNavigate } from "react-router-dom"
+import Clouds from "../Components/Clouds"
 
 function CloudPage() {
   const navigate = useNavigate()
@@ -24,6 +25,14 @@ function CloudPage() {
             />
           </Box>
         ))}
+        <Clouds 
+          cloudOneTop="-230px"
+          cloudOneRight="550px"
+          cloudTwoTop="-20px"
+          cloudTwoRight="0px"
+          cloudThreeTop="-400px"
+          cloudThreeRight="-500px"
+        />
       </Box>
     </>
   )

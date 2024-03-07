@@ -1,6 +1,7 @@
 import { Box, Paper } from "@mui/material"
 import { useParams } from "react-router-dom"
 import { businessBlogs } from "../Blogs/BusinessBlogs"
+import Clouds from "../Components/Clouds"
 
 function BusinessBlogPage() {
     const { id = '' } = useParams()
@@ -33,7 +34,7 @@ function BusinessBlogPage() {
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',
-      width: '95%',
+      width: '85%',
       maxWidth: '1200px',
       justifyContent: 'center',
       backgroundColor: '#F0EEEE',
@@ -57,6 +58,14 @@ function BusinessBlogPage() {
         }}>
           <img src={`${blog.image}`} alt={blog.title} />
         </Box>
+    <Clouds 
+      cloudOneTop='-140px'
+      cloudOneRight='500px'
+      cloudTwoTop='240px'
+      cloudTwoRight='120px'
+      cloudThreeTop='-200px'
+      cloudThreeRight='-470px'
+    />
     </Paper>
     </Box>
   )

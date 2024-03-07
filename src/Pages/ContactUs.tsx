@@ -1,4 +1,5 @@
 import { Box, Paper } from "@mui/material"
+import Clouds from "../Components/Clouds"
 
 function ContactUs() {
   return (
@@ -38,7 +39,15 @@ function ContactUs() {
               
           }} 
           />
-          </Box>        
+          </Box>
+          <Clouds 
+            cloudOneTop='-140px'
+            cloudOneRight='160px'
+            cloudTwoTop='240px'
+            cloudTwoRight='-220px'
+            cloudThreeTop='-200px'
+            cloudThreeRight='-900px'
+          />    
       </Paper>
       </Box>
     )
