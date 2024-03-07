@@ -4,36 +4,41 @@ function ContactUs() {
   return (
       <Box sx={{
         display: 'flex', 
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: '1.5rem'
         }}>
       <Paper sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         flexWrap: 'wrap',
-        width: '95%',
+        width: '80%',
         maxWidth: '1200px',
         justifyContent: 'center',
+
         backgroundColor: '#F0EEEE',
         borderRadius: '8px',
         padding: '2rem'
       }}>
           <Box sx={{
-            flex: '1 1 50%',
-            maxWidth: '50%'
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between'
           }}>
+            <Box sx={{
+              marginLeft: '3rem'
+            }}>
              <h2>{'ksjdbfkb'}</h2>
              <p>Author: {'blog.author'}</p>
              <p>{'log.textContent'}</p>
-          </Box>        <Box sx={{
-            flex: '1 1 50%',
-            maxWidth: '50%',
-            '& > *': {
-              width: '100%',
-              height: '500px'
-            }
-          }}>
-            <img src={`kjsdcdbks`} alt={'blog.title'} />
-          </Box>
+            </Box>
+            <Box sx={{
+              backgroundImage: "url('src/assets/Nebula_Img.png')",
+              height: '300px',
+              width: '479px',
+              
+          }} 
+          />
+          </Box>        
       </Paper>
       </Box>
     )

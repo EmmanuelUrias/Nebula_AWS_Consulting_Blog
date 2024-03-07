@@ -26,7 +26,8 @@ function BusinessBlogPage() {
   return (
     <Box sx={{
       display: 'flex', 
-      justifyContent: 'center'
+      justifyContent: 'center',
+      marginTop: '1.5rem'
       }}>
     <Paper sx={{
       display: 'flex',

@@ -17,13 +17,11 @@ function Hero() {
           justifyContent: 'center'
       }}>
         <Box>
-          <Box sx={{
+         <Box sx={{
               backgroundImage: "url('src/assets/Nebula_Img.png')",
               height: '300px',
               width: '479px',
-              marginRight: '1.5rem',
-              display: 'flex',
-              flexDirection: 'column'
+              marginRight: '1.5rem'
           }}>
           </Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: '2rem'}}>

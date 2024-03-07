@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box, Paper } from "@mui/material"
 import { useParams } from "react-router-dom"
 import { cloudBlogs } from "../Blogs/CloudBlogs"
 
@@ -25,30 +25,40 @@ function CloudBlogPage() {
 
   return (
     <Box sx={{
-      display: 'flex',
-      flexDirection: 'row',
-      flexWrap: 'wrap'
-    }}>
-        <Box sx={{
-          flex: '1 1 50%',
-          maxWidth: '50%',
-          '& > *': {
-            width: '100%',
-            height: '500px'
-          }
+        display: 'flex', 
+        justifyContent: 'center',
+        marginTop: '1.5rem'
         }}>
-          <img src={`${blog.image}`} alt={blog.title} />
-        </Box>
-        <Box sx={{
-          flex: '1 1 50%',
-          maxWidth: '50%',
-          paddingX: '1rem'
-        }}>
-           <h2>{blog.title}</h2>
-           <p>Author: {blog.author}</p>
-           <p>{blog.textContent}</p>
-        </Box>
-    </Box>
+      <Paper sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        width: '95%',
+        maxWidth: '1200px',
+        justifyContent: 'center',
+        backgroundColor: '#F0EEEE',
+        borderRadius: '8px',
+        padding: '2rem'
+      }}>
+          <Box sx={{
+            flex: '1 1 50%',
+            maxWidth: '50%'
+          }}>
+             <h2>{blog.title}</h2>
+             <p>Author: {blog.author}</p>
+             <p>{blog.textContent}</p>
+          </Box>        <Box sx={{
+            flex: '1 1 50%',
+            maxWidth: '50%',
+            '& > *': {
+              width: '100%',
+              height: '500px'
+            }
+          }}>
+            <img src={`${blog.image}`} alt={blog.title} />
+          </Box>
+      </Paper>
+      </Box>
   )
 }
 
