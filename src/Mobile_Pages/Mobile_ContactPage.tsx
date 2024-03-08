@@ -1,5 +1,4 @@
 import { Box, Paper } from "@mui/material"
-import Clouds from "../Components/Clouds"
 
 function Mobile_ContactPage() {
   return (

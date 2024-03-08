@@ -16,7 +16,7 @@ function Mobile_CloudPage() {
         marginTop: '0.5rem'
       }}>
         {cloudBlogs.map((blog) => (
-          <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
+          <Box key={blog.id} onClick={() => navigate(`/cloud/${blog.id}`)}>
             <Mobile_BlogCards
               title={blog.title}
               introTextContent={blog.introTextContent}
