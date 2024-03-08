@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"
-import Blog_Cards from "../Components/BlogCards"
+import Mobile_BlogCards from "../Mobile_Components/Mobile_BlogCards"
 import { businessBlogs } from "../Blogs/BusinessBlogs"
 import { useNavigate } from "react-router-dom"
 import Clouds from "../Components/Clouds"
@@ -13,11 +13,11 @@ function Mobile_BusinessPage() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginTop: '2rem'
+        marginTop: '0.5rem'
       }}>
         {businessBlogs.map((blog) => (
           <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
-            <Blog_Cards
+            <Mobile_BlogCards
               title={blog.title}
               introTextContent={blog.introTextContent}
               image={blog.image}
@@ -26,12 +26,12 @@ function Mobile_BusinessPage() {
           </Box>
         ))}
       <Clouds 
-        cloudOneTop="-230px"
-        cloudOneRight="550px"
-        cloudTwoTop="-20px"
-        cloudTwoRight="0px"
-        cloudThreeTop="-400px"
-        cloudThreeRight="-500px"
+        cloudOneTop="-630px"
+        cloudOneRight="150px"
+        cloudTwoTop="-430px"
+        cloudTwoRight="-90px"
+        cloudThreeTop="-140px"
+        cloudThreeRight="60px"
       />
       </Box>
     </>

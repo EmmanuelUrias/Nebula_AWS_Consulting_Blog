@@ -11,28 +11,24 @@ const Mobile_BlogCards:React.FC<businessBlogsProps> = ({title, introTextContent,
   return (
     <Paper sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         backgroundColor: '#F0EEEE',
+        alignItems: 'center',
         padding: '0.5rem',
         width: '90%',
-        minWidth: '720px',
-        maxWidth: '1200px',
         borderRadius: '8px',
-        marginTop: '1rem',
+        marginTop: '2rem',
         marginLeft: '4%',
         '& #business_blog_img': {
             width: '300px',
             borderRadius: '8px',
             objectFit: 'cover'
-        },
-        '&:hover': {
-            cursor: 'pointer'
         }
     }}>
         <img id='business_blog_img'src={`${image}`}/>
-        <Box sx={{marginLeft: '2rem', marginTop: '0.5rem'}}>            
-            <Box>{title}</Box>
-            <Box>{introTextContent}</Box>
+        <Box sx={{marginTop: '0.5rem'}}>            
+            <Box textAlign={'center'}>{title}</Box>
+            <Box textAlign={'center'}>{introTextContent}</Box>
         </Box>
     </Paper>
   )
