@@ -35,8 +35,7 @@ function ContactUs() {
             <Box sx={{
               backgroundImage: "url('src/assets/Nebula_Img.png')",
               height: '300px',
-              width: '479px',
-              
+              width: '479px'
           }} 
           />
           </Box>

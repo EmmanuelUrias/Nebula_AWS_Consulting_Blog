@@ -26,7 +26,20 @@ function HomePage() {
           </Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: '2rem'}}>
                 <Typography variant='h4' sx={{marginTop: '1rem'}}>Nebula AWS Consulting</Typography>
-                <Box sx={{backgroundColor: '#9E48FF', width: '7rem', height: '2.5rem', borderRadius: '8px', color: 'white', marginTop: '2rem', display: 'flex',alignItems: 'center', justifyContent: 'center', cursor: 'pointer'}}><Typography padding='0.25rem'>Contact Us</Typography></Box>
+                <Box onClick={() => navigate('/contactus')} sx={{
+                    backgroundColor: '#9E48FF', 
+                    width: '7rem', 
+                    height: '2.5rem', 
+                    borderRadius: '8px', 
+                    color: 'white', 
+                    marginTop: '2rem', 
+                    display: 'flex',
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    cursor: 'pointer'
+                    }}>
+                        <Typography padding='0.25rem'>Contact Us</Typography>
+                </Box>
             </Box>
         </Box>
         <Box sx={{

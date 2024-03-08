@@ -1,5 +1,5 @@
 import { Box } from "@mui/material"
-import Blog_Cards from "../Components/Blog_Cards"
+import Blog_Cards from "../Components/BlogCards"
 import { businessBlogs } from "../Blogs/BusinessBlogs"
 import { useNavigate } from "react-router-dom"
 import Clouds from "../Components/Clouds"

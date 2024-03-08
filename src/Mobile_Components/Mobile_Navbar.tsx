@@ -27,6 +27,7 @@ const Mobile_Navbar: React.FC<MobileNavbarProps> = ({isOpened, setIsOpened}) => 
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
+            paddingTop: '1rem',
             justifyContent: 'space-between',
             '& > *': {
                 cursor: 'pointer'
@@ -36,7 +37,7 @@ const Mobile_Navbar: React.FC<MobileNavbarProps> = ({isOpened, setIsOpened}) => 
                 marginLeft: '2rem',
             }
         }}>
-            <Box id='navTitle' onClick={() => navigate('/')}>Nebula AWS Consulting Blogs</Box>
+            <Box id='navTitle' onClick={() => navigate('/')}>Nebula AWS <br/>Consulting Blogs</Box>
             <Box onClick={toggleIsOpened} sx={{
                 marginRight: '1.5rem',
                 '& > *': {
@@ -63,6 +64,7 @@ const Mobile_Navbar: React.FC<MobileNavbarProps> = ({isOpened, setIsOpened}) => 
                 width: '100%',
                 fontSize: '1.2rem',
                 paddingY: '1rem',
+                marginTop: '1rem',
                 '& > *': {
                     marginBottom: '1rem'
                 }
