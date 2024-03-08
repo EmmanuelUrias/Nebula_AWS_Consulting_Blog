@@ -1,8 +1,40 @@
-import React from 'react'
+import { Box } from "@mui/material"
+import Blog_Cards from "../Components/BlogCards"
+import { businessBlogs } from "../Blogs/BusinessBlogs"
+import { useNavigate } from "react-router-dom"
+import Clouds from "../Components/Clouds"
 
 function Mobile_BusinessPage() {
+  const navigate = useNavigate()
+
   return (
-    <div>Mobile_BusinessPage</div>
+    <>
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '2rem'
+      }}>
+        {businessBlogs.map((blog) => (
+          <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
+            <Blog_Cards
+              title={blog.title}
+              introTextContent={blog.introTextContent}
+              image={blog.image}
+              id={blog.id}
+            />
+          </Box>
+        ))}
+      <Clouds 
+        cloudOneTop="-230px"
+        cloudOneRight="550px"
+        cloudTwoTop="-20px"
+        cloudTwoRight="0px"
+        cloudThreeTop="-400px"
+        cloudThreeRight="-500px"
+      />
+      </Box>
+    </>
   )
 }
 
