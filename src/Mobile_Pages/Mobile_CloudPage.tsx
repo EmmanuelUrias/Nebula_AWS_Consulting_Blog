@@ -12,6 +12,7 @@ function Mobile_CloudPage() {
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
         marginTop: '0.5rem'
       }}>
@@ -25,6 +26,7 @@ function Mobile_CloudPage() {
             />
           </Box>
         ))}
+      </Box>
       <Clouds 
         cloudOneTop="-630px"
         cloudOneRight="150px"
@@ -33,7 +35,6 @@ function Mobile_CloudPage() {
         cloudThreeTop="-140px"
         cloudThreeRight="60px"
       />
-      </Box>
     </>
   )
 }

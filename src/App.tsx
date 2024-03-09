@@ -19,7 +19,7 @@ import Mobile_BusinessBlogPage from './Mobile_Pages/Mobile_BusinessBlogPage'
 import Mobile_CloudBlogPage from './Mobile_Pages/Mobile_CloudBlogPage'
 
 function App() {
-  const isBigScreen = useMediaQuery('(min-width: 821px)')
+  const isBigScreen = useMediaQuery('(min-width: 850px)')
   const [isOpened, setIsOpened] = useState<boolean>(false)
   return (
     <>

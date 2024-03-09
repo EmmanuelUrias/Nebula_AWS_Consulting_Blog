@@ -51,7 +51,8 @@ function Mobile_HomePage() {
             display: 'flex',
             flexDirection: 'column',
             backgroundColor: '#F0EEEE',
-            padding: '0.5rem',
+            paddingX: '1rem',
+            paddingY: '0.5rem',
             borderRadius: '8px',
             '& #business_img': {
                 width: '220px',
@@ -73,7 +74,8 @@ function Mobile_HomePage() {
             display: 'flex',
             flexDirection: 'column',
             backgroundColor: '#F0EEEE',
-            padding: '0.5rem',
+            paddingX: '1rem',
+            paddingY: '0.5rem',
             marginTop: '3rem',
             borderRadius: '8px',
             '& #AWS_img': {
