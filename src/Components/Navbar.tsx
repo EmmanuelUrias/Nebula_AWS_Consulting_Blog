@@ -18,14 +18,17 @@ function Navbar() {
         },
         '& #nav_title': {
           fontSize: '1.5rem',
-          marginLeft: '2rem'
+          marginLeft: '2rem',
+          fontWeight: '300'
         },
         '& #nav_items': {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
           width: '40%',
-          marginRight: '2rem'
+          marginRight: '2rem',
+          fontSize: '1.05rem',
+          fontWeight: '300'
         }
       }}>
         <Box id='nav_title' onClick={() => navigate('/')}>
