@@ -20,6 +20,8 @@ function BusinessPage() {
             <Blog_Cards
               title={blog.title}
               introTextContent={blog.introTextContent}
+              author={blog.author}
+              date={blog.date}
               image={blog.image}
               id={blog.id}
             />
