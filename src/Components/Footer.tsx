@@ -1,4 +1,7 @@
 import { Box, Typography } from "@mui/material"
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 
 function Footer() {
   return (
@@ -24,7 +27,7 @@ function Footer() {
         <Box sx={{
         }}>
             <Box sx={{
-              marginLeft: '15rem',
+              marginLeft: '21rem',
               '& #footerTitle': {
                 fontSize: '20px',
                 fontWeight: '300'
@@ -36,7 +39,18 @@ function Footer() {
               }}>
               <Typography align="center" id='footerTitle'>Nebula AWS Consulting <br/> <Typography id='footerSubtext'>N.A.C © 2024</Typography></Typography>
             </Box>
-            <Box sx={{marginLeft: '15rem'}}>Icons</Box>
+            <Box sx={{
+              marginLeft: '10rem',
+              marginRight: '-5rem',
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              width: '20%'
+            }}
+              >
+              <InstagramIcon fontSize="large"/>
+              <LinkedInIcon fontSize="large"/>
+              <CloudQueueIcon fontSize="large"/>
+            </Box>
         </Box>
         <Box sx={{
           justifyContent: 'space-evenly',
