@@ -24,12 +24,11 @@ function Footer() {
               justifyContent: 'center'
           }
         }}>
-        <Box sx={{
-        }}>
+        <Box>
             <Box sx={{
-              marginLeft: '21rem',
+              marginLeft: '19rem',
               '& #footerTitle': {
-                fontSize: '20px',
+                fontSize: '1.4rem',
                 fontWeight: '300'
               },
               '& #footerSubtext': {
@@ -44,7 +43,10 @@ function Footer() {
               marginRight: '-5rem',
               display: 'flex',
               justifyContent: 'space-evenly',
-              width: '20%'
+              width: '20%',
+              '& > *': {
+                marginX: '0.7rem'
+              }
             }}
               >
               <InstagramIcon fontSize="large"/>
@@ -62,22 +64,22 @@ function Footer() {
           }
         }}>
             <Box>
-              <Typography>Contact Info</Typography>
-              <Typography>Call Us</Typography>
-              <Typography>702-410-0057</Typography>
-              <Typography>Email</Typography>
-              <Typography>emmanuelurias60@nebulaawsconsulting.com</Typography>
+              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Contact Info</Typography>
+              <Typography fontSize={'1.1rem'} fontWeight={'300'} mt={'0.7rem'}>Call Us:</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'}>702-410-0057</Typography>
+              <Typography fontSize={'1.1rem'} fontWeight={'300'} mt={'0.7rem'}>Email:</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'}></Typography>
             </Box>
-            <Box>
-              <Typography>Pages</Typography>
-              <Typography>Home</Typography>
-              <Typography>Business</Typography>
-              <Typography>Cloud</Typography>
-              <Typography>Contact Us</Typography>
+            <Box ml={'1rem'}>
+              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Pages</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
             </Box>
-            <Box>
-              <Typography>Other Websites</Typography>
-              <Typography>To be continued...</Typography>
+            <Box ml={'2rem'}>
+              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Other Websites</Typography>
+              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>To be continued...</Typography>
             </Box>
         </Box>
         </Box>
