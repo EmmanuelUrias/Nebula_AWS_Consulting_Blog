@@ -53,6 +53,7 @@ function Mobile_HomePage() {
             backgroundColor: '#F0EEEE',
             paddingX: '1rem',
             paddingY: '0.5rem',
+            paddingBottom: '1rem',
             borderRadius: '8px',
             '& #business_img': {
                 width: '220px',
@@ -66,8 +67,9 @@ function Mobile_HomePage() {
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography variant='h6'>Business Blogs</Typography>
-                <Typography sx={{width: '200px'}} align='center'>Blogs related to business development and other business topics</Typography>
+                <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Business Blogs</Typography>
+                <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
+                <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to business development and other business topics</Typography>
             </Box>
         </Paper>
         <Paper onClick={() => navigate('/cloud')} sx={{
@@ -76,6 +78,7 @@ function Mobile_HomePage() {
             backgroundColor: '#F0EEEE',
             paddingX: '1rem',
             paddingY: '0.5rem',
+            paddingBottom: '1rem',
             marginTop: '3rem',
             borderRadius: '8px',
             '& #AWS_img': {
@@ -89,8 +92,9 @@ function Mobile_HomePage() {
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography variant='h6'>Cloud Blogs</Typography>
-                <Typography sx={{width: '180px'}} align='center'>Blogs related to Cloud engineering with AWS</Typography>
+                <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Cloud Blogs</Typography>
+                <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
+                <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to Cloud engineering with AWS</Typography>
             </Box>
         </Paper>
       </Box>
