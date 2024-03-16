@@ -2,8 +2,11 @@ import { Box, Typography } from "@mui/material"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate()
   return (
     <>
       <Box sx={{
@@ -45,13 +48,20 @@ function Footer() {
               justifyContent: 'space-evenly',
               width: '20%',
               '& > *': {
-                marginX: '0.7rem'
+                marginX: '0.7rem',
+                cursor: 'pointer'
               }
             }}
               >
-              <InstagramIcon fontSize="large"/>
-              <LinkedInIcon fontSize="large"/>
-              <CloudQueueIcon fontSize="large"/>
+              <Box onClick={() => navigate('/')}>
+                <InstagramIcon fontSize="large"/>
+              </Box>
+              <Box onClick={() => navigate('/')}>
+                <LinkedInIcon fontSize="large"/>
+              </Box>
+              <Box onClick={() => navigate('/')}>
+                <CloudQueueIcon fontSize="large"/>
+              </Box>
             </Box>
         </Box>
         <Box sx={{
@@ -72,10 +82,18 @@ function Footer() {
             </Box>
             <Box ml={'1rem'}>
               <Typography fontSize={'1.2rem'} fontWeight={'300'}>Pages</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
+                <Link to={'/'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
+                </Link>
+                <Link to={'/business'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
+                </Link>
+                <Link to={'/cloud'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
+                </Link>
+                <Link to={'/contactus'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
+                </Link>
             </Box>
             <Box ml={'2rem'}>
               <Typography fontSize={'1.2rem'} fontWeight={'300'}>Other Websites</Typography>
