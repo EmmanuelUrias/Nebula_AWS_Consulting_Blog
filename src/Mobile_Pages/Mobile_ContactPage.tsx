@@ -5,7 +5,8 @@ function Mobile_ContactPage() {
       <Box sx={{
         display: 'flex', 
         justifyContent: 'center',
-        marginTop: '1.5rem'
+        marginTop: '1.5rem',
+        marginBottom: '3rem'
         }}>
       <Paper sx={{
         display: 'flex',

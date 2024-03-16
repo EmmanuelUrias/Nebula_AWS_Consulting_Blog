@@ -2,13 +2,15 @@ import { Box, Typography } from "@mui/material"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import { Link, useNavigate } from "react-router-dom";
 
 function Mobile_Footer() {
+  const navigate = useNavigate()
   return (
     <>
       <Box sx={{
         display: 'flex',
-        marginTop: '2rem',
+        marginTop: '0rem',
         padding: '2rem',
         backgroundColor: '#D9D9D9',
         justifyContent: 'center'
@@ -37,9 +39,15 @@ function Mobile_Footer() {
               <Typography align="center" id='footerTitle'>Nebula AWS Consulting <br/> <Typography id='footerSubtext'>N.A.C © 2024</Typography></Typography>
             </Box>
             <Box sx={{marginTop: '2rem', flexDirection: 'row', justifyContent: 'space-evenly'}}>
-              <InstagramIcon fontSize="large"/>
-              <LinkedInIcon fontSize="large"/>
-              <CloudQueueIcon fontSize="large"/>
+            <Box onClick={() => navigate('/')}>
+                <InstagramIcon fontSize="large"/>
+              </Box>
+              <Box onClick={() => navigate('/')}>
+                <LinkedInIcon fontSize="large"/>
+              </Box>
+              <Box onClick={() => navigate('/')}>
+                <CloudQueueIcon fontSize="large"/>
+              </Box>
             </Box>
         <Box sx={{
           justifyContent: 'space-evenly',
@@ -69,10 +77,18 @@ function Mobile_Footer() {
               }
               }}>
               <Typography fontSize={'1.2rem'} fontWeight={'300'}>Pages</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}>Home</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}>Business</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}>Cloud</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}>Contact Us</Typography>
+              <Link to={'/'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
+                </Link>
+                <Link to={'/business'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
+                </Link>
+                <Link to={'/cloud'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
+                </Link>
+                <Link to={'/contactus'}>
+                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
+                </Link>
             </Box>
             <Box sx={{marginTop: '1rem'}}>
               <Typography fontSize={'1.2rem'} fontWeight={'300'}>Other Websites</Typography>

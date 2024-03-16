@@ -14,7 +14,8 @@ function Mobile_BusinessPage() {
         flexDirection: 'column',
         alignItems: 'center',
         marginTop: '0.5rem',
-        marginLeft: '1rem'
+        marginLeft: '1rem',
+        marginBottom: '3rem'
       }}>
         {businessBlogs.map((blog) => (
           <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
@@ -28,14 +29,14 @@ function Mobile_BusinessPage() {
             />
           </Box>
         ))}
-      <Clouds 
+      {/* <Clouds 
         cloudOneTop="-630px"
         cloudOneRight="150px"
         cloudTwoTop="-430px"
         cloudTwoRight="-90px"
         cloudThreeTop="-140px"
         cloudThreeRight="60px"
-      />
+      /> */}
       </Box>
     </>
   )
