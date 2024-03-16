@@ -26,48 +26,41 @@ function CloudBlogPage() {
 
   return (
     <Box sx={{
-        display: 'flex', 
-        justifyContent: 'center',
-        marginTop: '1.5rem'
-        }}>
-      <Paper sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        width: '85%',
-        maxWidth: '1200px',
-        justifyContent: 'center',
-        backgroundColor: '#F0EEEE',
-        borderRadius: '8px',
-        padding: '2rem'
+      display: 'flex', 
+      justifyContent: 'center',
+      marginTop: '1.5rem'
       }}>
-          <Box sx={{
-            flex: '1 1 50%',
-            maxWidth: '50%'
-          }}>
-             <h2>{blog.title}</h2>
-             <p>Author: {blog.author}</p>
-             <p>{blog.textContent}</p>
-          </Box>        <Box sx={{
-            flex: '1 1 50%',
-            maxWidth: '50%',
-            '& > *': {
-              width: '100%',
-              height: '500px'
-            }
-          }}>
-            <img src={`${blog.image}`} alt={blog.title} />
-          </Box>
-          <Clouds 
-            cloudOneTop='-140px'
-            cloudOneRight='500px'
-            cloudTwoTop='240px'
-            cloudTwoRight='120px'
-            cloudThreeTop='-200px'
-            cloudThreeRight='-470px'
-          />
-      </Paper>
-      </Box>
+    <Paper sx={{
+      display: 'flex',
+      flexDirection: 'row',
+      width: '85%',
+      maxWidth: '1200px',
+      justifyContent: 'center',
+      backgroundColor: '#F0EEEE',
+      borderRadius: '8px',
+      padding: '2rem',
+      paddingX: '4rem'
+    }}>
+        <Box sx={{
+          textAlign: 'center',
+          '& > *': {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center'
+          }
+        }}>
+           <Box fontWeight={'300'} fontSize={'1.4rem'}>{blog.title}</Box>
+           <Box sx={{
+            fontWeight: '300',
+            marginTop: '1rem'
+           }}>
+             <Box marginRight={'10rem'}>{blog.author}</Box>
+             <Box>{blog.date}</Box>
+           </Box>
+           <Box fontWeight={'300'} mt={'1.5rem'}>{blog.textContent}</Box>
+        </Box>        
+    </Paper>
+    </Box>
   )
 }
 

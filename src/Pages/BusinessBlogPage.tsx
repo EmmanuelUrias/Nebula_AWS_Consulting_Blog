@@ -30,10 +30,9 @@ function BusinessBlogPage() {
       justifyContent: 'center',
       marginTop: '1.5rem'
       }}>
-    <Paper sx={{
+   <Paper sx={{
       display: 'flex',
       flexDirection: 'row',
-      flexWrap: 'wrap',
       width: '85%',
       maxWidth: '1200px',
       justifyContent: 'center',
@@ -42,31 +41,23 @@ function BusinessBlogPage() {
       padding: '2rem'
     }}>
         <Box sx={{
-          flex: '1 1 50%',
-          maxWidth: '50%'
-        }}>
-           <Box fontWeight={'300'} fontSize={'1.4rem'}>{blog.title}</Box>
-           <Box fontWeight={'300'} mt={'0.5rem'}>Author: {blog.author}</Box>
-           <Box fontWeight={'300'} mt={'1rem'}>{blog.textContent}</Box>
-        </Box>        
-        <Box sx={{
-          flex: '1 1 50%',
-          maxWidth: '50%',
+          textAlign: 'center',
           '& > *': {
-            width: '100%',
-            height: '500px'
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center'
           }
         }}>
-          <img src={`${blog.image}`} alt={blog.title} />
-        </Box>
-    <Clouds 
-      cloudOneTop='-140px'
-      cloudOneRight='500px'
-      cloudTwoTop='240px'
-      cloudTwoRight='120px'
-      cloudThreeTop='-200px'
-      cloudThreeRight='-470px'
-    />
+           <Box fontWeight={'300'} fontSize={'1.4rem'}>{blog.title}</Box>
+           <Box sx={{
+            fontWeight: '300',
+            marginTop: '1rem'
+           }}>
+             <Box marginRight={'10rem'}>{blog.author}</Box>
+             <Box>{blog.date}</Box>
+           </Box>
+           <Box fontWeight={'300'} mt={'1rem'}>{blog.textContent}</Box>
+        </Box>        
     </Paper>
     </Box>
   )

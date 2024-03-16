@@ -31,27 +31,31 @@ function Mobile_BusinessBlogPage() {
       }}>
     <Paper sx={{
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: 'row',
       width: '85%',
-      alignItems: 'center',
+      maxWidth: '1200px',
+      justifyContent: 'center',
       backgroundColor: '#F0EEEE',
       borderRadius: '8px',
       padding: '2rem'
     }}>
-      <Box sx={{
-        '& > *': {
-          width: '340px',
-          height: '210px'
-        }
-      }}>
-        <img src={`${blog.image}`} alt={blog.title} />
-      </Box>
         <Box sx={{
-          textAlign: 'center'
+          textAlign: 'center',
+          '& > *': {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center'
+          }
         }}>
-           <h2>{blog.title}</h2>
-           <p>Author: {blog.author}</p>
-           <p>{blog.textContent}</p>
+           <Box fontWeight={'300'} fontSize={'1.4rem'}>{blog.title}</Box>
+           <Box sx={{
+            fontWeight: '300',
+            marginTop: '1rem'
+           }}>
+             <Box marginRight={'2rem'}>{blog.author}</Box>
+             <Box>{blog.date}</Box>
+           </Box>
+           <Box fontWeight={'300'} mt={'1.5rem'}>{blog.textContent}</Box>
         </Box>        
     </Paper>
     </Box>
