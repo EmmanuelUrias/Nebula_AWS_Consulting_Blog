@@ -43,7 +43,7 @@ function Mobile_Footer() {
             </Box>
         <Box sx={{
           justifyContent: 'space-evenly',
-          marginTop: '3rem',
+          marginTop: '1.5rem',
           '& > *': {
             display: 'flex',
             flexDirection: 'column',

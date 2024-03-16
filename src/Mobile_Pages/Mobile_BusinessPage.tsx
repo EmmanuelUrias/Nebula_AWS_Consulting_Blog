@@ -13,13 +13,16 @@ function Mobile_BusinessPage() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginTop: '0.5rem'
+        marginTop: '0.5rem',
+        marginLeft: '1rem'
       }}>
         {businessBlogs.map((blog) => (
           <Box key={blog.id} onClick={() => navigate(`/business/${blog.id}`)}>
             <Mobile_BlogCards
               title={blog.title}
               introTextContent={blog.introTextContent}
+              author={blog.author}
+              date={blog.date}
               image={blog.image}
               id={blog.id}
             />

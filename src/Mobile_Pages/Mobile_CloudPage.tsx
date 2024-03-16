@@ -14,13 +14,16 @@ function Mobile_CloudPage() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '0.5rem'
+        marginTop: '0.5rem',
+        marginLeft: '1rem'
       }}>
         {cloudBlogs.map((blog) => (
           <Box key={blog.id} onClick={() => navigate(`/cloud/${blog.id}`)}>
             <Mobile_BlogCards
               title={blog.title}
               introTextContent={blog.introTextContent}
+              author={blog.author}
+              date={blog.date}
               image={blog.image}
               id={blog.id}
             />

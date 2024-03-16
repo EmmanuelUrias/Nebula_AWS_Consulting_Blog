@@ -45,10 +45,11 @@ function BusinessBlogPage() {
           flex: '1 1 50%',
           maxWidth: '50%'
         }}>
-           <h2>{blog.title}</h2>
-           <p>Author: {blog.author}</p>
-           <p>{blog.textContent}</p>
-        </Box>        <Box sx={{
+           <Box fontWeight={'300'} fontSize={'1.4rem'}>{blog.title}</Box>
+           <Box fontWeight={'300'} mt={'0.5rem'}>Author: {blog.author}</Box>
+           <Box fontWeight={'300'} mt={'1rem'}>{blog.textContent}</Box>
+        </Box>        
+        <Box sx={{
           flex: '1 1 50%',
           maxWidth: '50%',
           '& > *': {

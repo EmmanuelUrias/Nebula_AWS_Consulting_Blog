@@ -37,7 +37,7 @@ function Mobile_HomePage() {
                   justifyContent: 'center', 
                   cursor: 'pointer'
                   }}>
-                    <Typography padding='0.25rem'>Contact Us</Typography>
+                    <Typography padding='0.25rem' fontSize={'1.2rem'} fontWeight={'300'}>Contact Us</Typography>
                 </Box>
             </Box>
         </Box>
@@ -67,7 +67,7 @@ function Mobile_HomePage() {
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Business Blogs</Typography>
+                <Typography sx={{fontWeight: '300', fontSize: '1.4rem', marginY: '0.5rem'}}>Business Blogs</Typography>
                 <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
                 <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to business development and other business topics</Typography>
             </Box>
@@ -92,7 +92,7 @@ function Mobile_HomePage() {
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Cloud Blogs</Typography>
+                <Typography sx={{fontWeight: '300', fontSize: '1.4rem', marginY: '0.5rem'}}>Cloud Blogs</Typography>
                 <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
                 <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to Cloud engineering with AWS</Typography>
             </Box>
