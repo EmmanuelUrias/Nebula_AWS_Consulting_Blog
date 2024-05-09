@@ -31,16 +31,16 @@ const Mobile_BlogCards:React.FC<businessBlogsProps> = ({title, introTextContent,
         <Box sx={{marginTop: '0.7rem'}}>            
             <Box sx={{
                 fontSize: '1.2rem',
-                fontWeight: '300',
-                textAlign: 'center'
+                fontWeight: '400',
+                textAlign: 'center',
+                paddingX: '0.7rem'
             }}>{title}</Box>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                width: '90%',
                 marginY: '0.5rem',
-                marginX: '1rem',
+                paddingX: '3.5rem',
                 '& > *': {
                     fontSize: '0.9rem',
                     fontWeight: '300',
@@ -51,9 +51,10 @@ const Mobile_BlogCards:React.FC<businessBlogsProps> = ({title, introTextContent,
                 <Box>{date}</Box>
             </Box>
             <Box sx={{
-                fontWeight: '300',
+                fontWeight: '400',
                 textAlign: 'center',
-                marginY: '0.7rem'
+                marginY: '0.7rem',
+                paddingX: '1rem'
             }}>{introTextContent}</Box>
         </Box>
     </Paper>

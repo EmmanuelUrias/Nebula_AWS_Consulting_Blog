@@ -18,27 +18,31 @@ function HomePage() {
       }}>
         <Box>
          <Box sx={{
-              backgroundImage: "url('src/assets/Nebula_Img.png')",
+              backgroundImage: "url('src/assets/Nebula AWS Logo Icon.png')",
               height: '300px',
-              width: '479px',
+              width: '489px',
               marginRight: '1.5rem'
           }}>
           </Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginRight: '2rem'}}>
-                <Typography variant='h4' sx={{marginTop: '1rem', fontWeight: '300'}}>Nebula AWS Consulting</Typography>
+                <Typography variant='h4' sx={{marginTop: '1rem', marginLeft: '2rem', fontWeight: '400'}}>Nebula AWS Consulting</Typography>
                 <Box onClick={() => navigate('/contactus')} sx={{
-                    backgroundColor: '#9E48FF', 
-                    width: '7rem', 
-                    height: '2.5rem', 
+                    backgroundColor: '#FE783D', 
+                    width: '9rem', 
+                    height: '3rem', 
                     borderRadius: '8px', 
                     color: 'white', 
                     marginTop: '2rem', 
+                    marginLeft: '2rem',
                     display: 'flex',
                     alignItems: 'center', 
                     justifyContent: 'center', 
                     cursor: 'pointer',
+                    ':hover': {
+                        scale: '1.05'
+                    }
                     }}>
-                        <Typography padding='0.5rem' fontSize={'1.1rem'} fontWeight={'300'}>Contact Us</Typography>
+                        <Typography padding='0.5rem' fontSize={'1.3rem'} fontWeight={'400'}>Contact Us</Typography>
                 </Box>
             </Box>
         </Box>
@@ -68,6 +72,7 @@ function HomePage() {
             borderRadius: '8px',
             '& #business_img': {
                 width: '220px',
+                height: '180px',
                 borderRadius: '8px',
                 objectFit: 'cover'
             },
@@ -76,11 +81,12 @@ function HomePage() {
                 cursor: 'pointer'
             }
         }}>
-            <img id='business_img' src='src/assets/Business_Img.png'></img>
+            <img id='business_img' src='src/assets/BusinessImage.png'></img>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                justifyContent: 'center',
                 paddingX: '1rem'
             }}>
                 <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Business Blogs</Typography>
@@ -96,6 +102,7 @@ function HomePage() {
             borderRadius: '8px',
             '& #AWS_img': {
                 width: '220px',
+                height: '180px',
                 borderRadius: '8px'
             },
             '&:hover': {
@@ -103,11 +110,12 @@ function HomePage() {
                 cursor: 'pointer'
             }
             }}>
-            <img id='AWS_img' src='src/assets/AWS_Img.png'></img>
+            <img id='AWS_img' src='src/assets/AWSImage.png'></img>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                justifyContent: 'center',
                 paddingX: '1rem'
             }}>
                 <Typography sx={{fontWeight: '300', fontSize: '1.4rem'}}>Cloud Blogs</Typography>

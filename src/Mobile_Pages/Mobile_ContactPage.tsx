@@ -23,9 +23,10 @@ function Mobile_ContactPage() {
             alignItems: 'center'
           }}>
             <Box sx={{
-              backgroundImage: "url('src/assets/Mobile_Nebula_Img.png')",
-              height: '212px',
-              width: '340px'
+              backgroundImage: "url('src/assets/Mobile Nebula AWS Logo Icon.png')",
+              height: '180px',
+              width: '340px',
+              marginLeft: '1.5rem'
           }} 
           />
             <Box sx={{

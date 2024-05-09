@@ -29,7 +29,7 @@ function Footer() {
         }}>
         <Box>
             <Box sx={{
-              marginLeft: '19rem',
+              marginLeft: '24%',
               '& #footerTitle': {
                 fontSize: '1.4rem',
                 fontWeight: '300'
@@ -65,7 +65,9 @@ function Footer() {
             </Box>
         </Box>
         <Box sx={{
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-between',
+          marginLeft: '11%',
+          width: '70%',
           marginTop: '3rem',
           '& > *': {
             display: 'flex',
@@ -74,29 +76,29 @@ function Footer() {
           }
         }}>
             <Box>
-              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Contact Info</Typography>
-              <Typography fontSize={'1.1rem'} fontWeight={'300'} mt={'0.7rem'}>Call Us:</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}>702-410-0057</Typography>
-              <Typography fontSize={'1.1rem'} fontWeight={'300'} mt={'0.7rem'}>Email:</Typography>
-              <Typography fontSize={'1rem'} fontWeight={'300'}></Typography>
+              <Typography fontSize={'1.4rem'} fontWeight={'300'}>Contact Info</Typography>
+              <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'0.7rem'}>Call Us:</Typography>
+              <Typography fontSize={'1.1rem'} fontWeight={'300'}>702-410-0057</Typography>
+              <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'0.7rem'}>Email:</Typography>
+              <Typography fontSize={'1.1rem'} fontWeight={'300'}>emmanuelurias60@nebulaawsconsulting</Typography>
             </Box>
-            <Box ml={'1rem'}>
-              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Pages</Typography>
+            <Box ml={'2rem'}>
+              <Typography fontSize={'1.4rem'} fontWeight={'300'}>Pages</Typography>
                 <Link to={'/'}>
-                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
+                  <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'1rem'}>Home</Typography>
                 </Link>
                 <Link to={'/business'}>
-                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
+                  <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'0.5rem'}>Business</Typography>
                 </Link>
                 <Link to={'/cloud'}>
-                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
+                  <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'0.5rem'}>Cloud</Typography>
                 </Link>
                 <Link to={'/contactus'}>
-                  <Typography fontSize={'1rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
+                  <Typography fontSize={'1.2rem'} fontWeight={'300'} mt={'0.5rem'}>Contact Us</Typography>
                 </Link>
             </Box>
             <Box ml={'2rem'}>
-              <Typography fontSize={'1.2rem'} fontWeight={'300'}>Other Websites</Typography>
+              <Typography fontSize={'1.4rem'} fontWeight={'300'}>Other Websites</Typography>
               <Typography fontSize={'1rem'} fontWeight={'300'} mt={'1rem'}>To be continued...</Typography>
             </Box>
         </Box>

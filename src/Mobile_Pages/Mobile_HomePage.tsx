@@ -17,16 +17,17 @@ function Mobile_HomePage() {
 
         <Box>
          <Box sx={{
-              backgroundImage: "url('src/assets/Mobile_Nebula_Img.png')",
-              height: '210px',
+              backgroundImage: "url('src/assets/Mobile Nebula AWS Logo Icon.png')",
+              height: '180px',
               width: '340px',
-              objectFit: 'cover'
+              objectFit: 'cover',
+              marginLeft: '1.5rem'
           }}>
           </Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <Typography variant='h5' sx={{marginTop: '1rem'}}>Nebula AWS Consulting</Typography>
+                <Typography variant='h5' sx={{marginTop: '1rem', fontWeight: '400'}}>Nebula AWS Consulting</Typography>
                 <Box onClick={() => navigate('/contactus')} sx={{
-                  backgroundColor: '#9E48FF', 
+                  backgroundColor: '#FE783D', 
                   width: '9rem', 
                   height: '3rem', 
                   borderRadius: '8px', 
@@ -37,7 +38,7 @@ function Mobile_HomePage() {
                   justifyContent: 'center', 
                   cursor: 'pointer'
                   }}>
-                    <Typography padding='0.25rem' fontSize={'1.2rem'} fontWeight={'300'}>Contact Us</Typography>
+                    <Typography padding='0.25rem' fontSize={'1.2rem'} fontWeight={'500'}>Contact Us</Typography>
                 </Box>
             </Box>
         </Box>
@@ -57,17 +58,18 @@ function Mobile_HomePage() {
             borderRadius: '8px',
             '& #business_img': {
                 width: '220px',
+                height: '180px',
                 borderRadius: '8px',
                 objectFit: 'cover'
             }
         }}>
-            <img id='business_img' src='src/assets/Business_Img.png'></img>
+            <img id='business_img' src='src/assets/BusinessImage.png'></img>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography sx={{fontWeight: '300', fontSize: '1.4rem', marginY: '0.5rem'}}>Business Blogs</Typography>
+                <Typography sx={{fontWeight: '400', fontSize: '1.4rem', marginY: '0.5rem'}}>Business Blogs</Typography>
                 <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
                 <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to business development and other business topics</Typography>
             </Box>
@@ -86,13 +88,13 @@ function Mobile_HomePage() {
                 borderRadius: '8px'
             }
             }}>
-            <img id='AWS_img' src='src/assets/AWS_Img.png'></img>
+            <img id='AWS_img' src='src/assets/AWSImage.png'></img>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center'
             }}>
-                <Typography sx={{fontWeight: '300', fontSize: '1.4rem', marginY: '0.5rem'}}>Cloud Blogs</Typography>
+                <Typography sx={{fontWeight: '400', fontSize: '1.4rem', marginY: '0.5rem'}}>Cloud Blogs</Typography>
                 <Box sx={{height: '0.3rem', width: '90%', display: 'flex', backgroundColor:'#D9D9D9', marginTop: '0rem', borderRadius: '8px'}}></Box>
                 <Typography sx={{width: '200px', fontWeight: '300', marginTop: '0.5rem', textAlign: 'center'}}>Blogs related to Cloud engineering with AWS</Typography>
             </Box>

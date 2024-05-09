@@ -1,5 +1,4 @@
 import { Box, Paper } from "@mui/material"
-import Clouds from "../Components/Clouds"
 
 function ContactUs() {
   return (
@@ -45,9 +44,11 @@ function ContactUs() {
                <Box>Business Website: to be continued</Box>
             </Box>
             <Box sx={{
-              backgroundImage: "url('src/assets/Nebula_Img.png')",
-              height: '300px',
-              width: '479px'
+              backgroundImage: "url('src/assets/Nebula AWS Consulting Logo Blog.png')",
+              height: '370px',
+              width: '522px',
+              objectFit: 'cover',
+              borderRadius: '12px'
           }} 
           />
           </Box>
