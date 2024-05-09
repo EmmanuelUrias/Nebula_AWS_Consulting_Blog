@@ -17,7 +17,7 @@ function Mobile_HomePage() {
 
         <Box>
          <Box sx={{
-              backgroundImage: "url('src/assets/Mobile Nebula AWS Logo Icon.png')",
+              backgroundImage: "url('public/assets/Mobile Nebula AWS Logo Icon.png')",
               height: '180px',
               width: '340px',
               objectFit: 'cover',
@@ -63,7 +63,7 @@ function Mobile_HomePage() {
                 objectFit: 'cover'
             }
         }}>
-            <img id='business_img' src='src/assets/BusinessImage.png' alt='Business Blogs Image' />
+            <img id='business_img' src='public/assets/BusinessImage.png' alt='Business Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -88,7 +88,7 @@ function Mobile_HomePage() {
                 borderRadius: '8px'
             }
             }}>
-            <img id='AWS_img' src='src/assets/AWSImage.png' alt='Cloud Blogs Image' />
+            <img id='AWS_img' src='public/assets/AWSImage.png' alt='Cloud Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',

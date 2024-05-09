@@ -44,7 +44,7 @@ function ContactUs() {
                <Box>Business Website: to be continued</Box>
             </Box>
             <Box sx={{
-              backgroundImage: "url('src/assets/Nebula AWS Consulting Logo Blog.png')",
+              backgroundImage: "url('public/assets/Nebula AWS Consulting Logo Blog.png')",
               height: '370px',
               width: '522px',
               objectFit: 'cover',

@@ -26,7 +26,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     In conclusion, business development catalyzes organizational evolution and prosperity. By embracing a customer-centric approach, leveraging strategic insights, and encouraging innovation, businesses can position themselves for sustained success in today's fast-paced marketplace. As we embark on this journey of growth and transformation, let us remain consistent in our dedication to understanding and serving the needs of our customers, for they are the cornerstone of our collective success.`,
     introTextContent: `Business development is about adapting to customer needs, fostering innovation, and thriving amid competition in today's market.`,
-    image: 'src/assets/BDImage.webp',
+    image: 'public/assets/BDImage.webp',
     id: 1
 },
 {
@@ -55,7 +55,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     Improving a business is a multifaceted journey that demands meticulous assessment and strategic action. By setting clear goals, developing strategic plans, and fostering a culture of continuous improvement, businesses can adapt to evolving market demands and position themselves for long-term success. Continuous monitoring and celebration of successes reinforce positive change, driving ongoing growth and innovation within the organization. Ultimately, the process of improving a business is an ongoing commitment to excellence, requiring dedication, collaboration, and a relentless pursuit of improvement.`,
     introTextContent: `Improving a business requires meticulous assessment and strategic action; this blog explores efficient mechanisms and practical strategies to streamline the process for entrepreneurs and business managers.`,
-    image: 'src/assets/BIImage.webp',
+    image: 'public/assets/BIImage.webp',
     id: 3
 },
 {
@@ -84,7 +84,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     By meticulously analyzing and optimizing each business model canvas component, you cultivate a holistic understanding of your business dynamics and develop a strategic roadmap for sustainable growth and success. Continuously iterating and refining your business model in response to changing market dynamics, customer needs, and competitive pressures allows you to adapt and thrive in an ever-evolving business landscape.`,
     introTextContent: `Business models are vital tools for effectively organizing and developing businesses and innovative ideas, providing a structured approach to achieving success.`,
-    image: `src/assets/BMImage.webp`,
+    image: `public/assets/BMImage.webp`,
     id: 5
 },
 {
@@ -103,7 +103,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     Continuous market observation is essential for staying up-to-date on evolving market trends, consumer preferences, and competitive developments. This involves monitoring changes in market demand, customer feedback, and competitor strategies in real-time, allowing businesses to adapt their approach and capitalize on new opportunities. By remaining agile and responsive to market dynamics, businesses can maintain a competitive edge and position themselves for long-term success in today's dynamic marketplace.`,
     introTextContent: `Market research serves as a cornerstone for businesses, providing critical insights into their target market and facilitating informed decision-making.`,
-    image: `src/assets/MOImage.webp`,
+    image: `public/assets/MOImage.webp`,
     id: 7
 },
 {
@@ -126,7 +126,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     In conclusion, managing internal resources effectively requires a holistic and proactive approach. It’s not just about avoiding mistakes but about enabling your business to thrive and adapt in an ever-changing landscape. As businesses continue to evolve, the principles of resource management will remain a constant cornerstone of success. Encourage your organization to regularly review and update your resource management practices to stay competitive and resilient.`,
     introTextContent: `In addition to navigating external factors and market dynamics, managing internal resources efficiently is crucial; it serves as the cornerstone of a thriving and successful business. `,
-    image: 'src/assets/IRMImage.webp',
+    image: 'public/assets/IRMImage.webp',
     id: 9
 },
 {
@@ -149,7 +149,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     In conclusion, the combined power of SWOT and STEP analyses offers businesses a comprehensive toolkit for navigating risks and seizing opportunities in today's dynamic business landscape. By conducting rigorous analyses, integrating real-life case studies, and fostering a culture of innovation and agility, businesses can develop strategies that drive sustainable growth and long-term success.`,
     introTextContent: `In today's fast-paced business landscape, where technology evolves rapidly and competition intensifies globally, mastering risk management is crucial for long-term success and adaptability.`,
-    image: 'src/assets/RAImage.webp',
+    image: 'public/assets/RAImage.webp',
     id: 11
 },
 {
@@ -172,7 +172,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     In conclusion, mastering product portfolio management is a multifaceted endeavor that requires a blend of strategic vision, analytical strength, and adaptability. By embracing data-driven analysis, lifecycle management, innovation, and risk mitigation, businesses can optimize their product portfolios for sustained success in an ever-changing marketplace. Through continuous improvement and engagement with readers and stakeholders, businesses can cultivate a culture of innovation and resilience, ensuring long-term viability and competitiveness.`,
     introTextContent: 'In the ever-evolving landscape of business, managing a product portfolio is a crucial endeavor that requires strategic foresight, meticulous planning, and agile execution.',
-    image: 'src/assets/PPMImage.webp',
+    image: 'public/assets/PPMImage.webp',
     id: 13
 
 },
@@ -194,7 +194,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     Product development and improvement are dynamic and integral processes that require a strategic approach from inception through launch and beyond. By setting clear goals, fostering creativity through brainstorming, meticulously designing and developing the product, rigorously testing it, and continuously improving it based on user feedback, companies can achieve significant advancements in their offerings and stay relevant in today’s fast-paced market.`,
     introTextContent: `In today's rapidly evolving market landscape, characterized by constant technological advancements and intensifying global competition, businesses are compelled to embrace a culture of continuous evolution to maintain their competitive edge.`,
-    image: 'src/assets/PDImage.webp',
+    image: 'public/assets/PDImage.webp',
     id: 15
 
 },
@@ -220,7 +220,7 @@ export const businessBlogs: businessBlogsProps[]= [
     
     In conclusion, mastering marketing concepts is crucial for businesses seeking to excel in today's competitive marketplace. By understanding foundational marketing principles, crafting strategic frameworks, implementing effective campaigns, and continuously improving and innovating, businesses can unlock new growth opportunities, deepen customer connections, and achieve long-term success. With the right mix of creativity, strategy, and execution, businesses can confidently navigate the complexities of the marketing landscape and make a significant impact in their industries.`,
     introTextContent: `In the landscape of business, effective marketing is not just a strategy—it's the lifeblood that fuels growth, fosters customer relationships, and drives success.`,
-    image: 'src/assets/MCImage.webp',
+    image: 'public/assets/MCImage.webp',
     id: 17
 }
 ]
