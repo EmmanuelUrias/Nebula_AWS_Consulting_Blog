@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 
 function Navbar() {

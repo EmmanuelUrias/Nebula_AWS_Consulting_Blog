@@ -1,7 +1,7 @@
 import { Box, Paper, Typography } from "@mui/material"
 import { useParams } from "react-router-dom"
 import { cloudBlogs } from "../Blogs/CloudBlogs"
-import Clouds from "../Components/Clouds"
+import NotFoundPage from "./NotFound"
 
 function CloudBlogPage() {
     const { id = '' } = useParams()
@@ -19,7 +19,9 @@ function CloudBlogPage() {
     const blog = grabBlog()
 
     if (blog === null) {
-      throw new Error("Blog not found");
+      return (
+        <NotFoundPage />
+      )
   }
 
   const paragraphs = blog.textContent.split('\n').filter(p => p.trim() !== '')

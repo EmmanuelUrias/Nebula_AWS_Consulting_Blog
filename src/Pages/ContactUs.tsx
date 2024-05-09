@@ -66,14 +66,6 @@ function ContactUs() {
                   <li>Operational Excellency</li>  We also offer the deployment of full stack apps, containerized architectures, backups, server-less architectures, and networking solutions.</Box>
             </Box>
       </Paper>
-          {/* <Clouds 
-            cloudOneTop='-140px'
-            cloudOneRight='160px'
-            cloudTwoTop='240px'
-            cloudTwoRight='-220px'
-            cloudThreeTop='-200px'
-            cloudThreeRight='-900px'
-          />     */}
       </Box>
     )
   }

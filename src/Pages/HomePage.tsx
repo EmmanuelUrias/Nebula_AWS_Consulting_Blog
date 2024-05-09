@@ -1,6 +1,7 @@
 import { Box, Typography, Paper } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import Clouds from '../Components/Clouds'
+
 function HomePage() {
   const navigate = useNavigate()
   return (
@@ -81,7 +82,7 @@ function HomePage() {
                 cursor: 'pointer'
             }
         }}>
-            <img id='business_img' src='src/assets/BusinessImage.png'></img>
+            <img id='business_img' src='src/assets/BusinessImage.png' alt='Business Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -110,7 +111,7 @@ function HomePage() {
                 cursor: 'pointer'
             }
             }}>
-            <img id='AWS_img' src='src/assets/AWSImage.png'></img>
+            <img id='AWS_img' src='src/assets/AWSImage.png' alt='Cloud Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',

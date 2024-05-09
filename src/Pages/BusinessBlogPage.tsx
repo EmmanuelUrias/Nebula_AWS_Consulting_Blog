@@ -1,6 +1,7 @@
 import { Box, Paper, Typography } from "@mui/material"
 import { useParams } from "react-router-dom"
 import { businessBlogs } from "../Blogs/BusinessBlogs"
+import NotFoundPage from "./NotFound"
 
 function BusinessBlogPage() {
     const { id = '' } = useParams()
@@ -18,7 +19,9 @@ function BusinessBlogPage() {
     const blog = grabBlog()
 
     if (blog === null) {
-      throw new Error("Blog not found");
+      return (
+        <NotFoundPage />
+      )
   }
 
   const paragraphs = blog.textContent.split('\n').filter(p => p.trim() !== '')

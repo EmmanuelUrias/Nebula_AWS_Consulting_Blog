@@ -13,7 +13,7 @@ function Footer() {
         display: 'flex',
         marginTop: '4rem',
         padding: '2rem',
-        height: '500px',
+        height: '350px',
         backgroundColor: '#D9D9D9',
         justifyContent: 'center'
       }}>

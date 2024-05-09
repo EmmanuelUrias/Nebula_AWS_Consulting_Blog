@@ -32,7 +32,7 @@ const Blog_Cards:React.FC<blogProps> = ({title, author, date, introTextContent, 
             scale: '1.01'
         }
     }}>
-        <img id='blog_img'src={`${image}`}/>
+        <img id='blog_img'src={`${image}`} alt='A blog image related to the title fo the blog'/>
         <Box sx={{marginLeft: '2rem', marginTop: '0.5rem', fontWeight: '300'}}>            
             <Box fontSize={'1.3rem'} fontWeight={'300'}>{title}</Box>
             <Box sx={{
