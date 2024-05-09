@@ -1,6 +1,7 @@
 import { Box, Typography, Paper } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import Clouds from '../Components/Clouds'
+
 function HomePage() {
   const navigate = useNavigate()
   return (

@@ -2,7 +2,6 @@ import { Box } from "@mui/material"
 import Mobile_BlogCards from "../Mobile_Components/Mobile_BlogCards"
 import { cloudBlogs } from "../Blogs/CloudBlogs"
 import { useNavigate } from "react-router-dom"
-import Clouds from "../Components/Clouds"
 
 function Mobile_CloudPage() {
   const navigate = useNavigate()
@@ -31,14 +30,6 @@ function Mobile_CloudPage() {
           </Box>
         ))}
       </Box>
-      {/* <Clouds 
-        cloudOneTop="-630px"
-        cloudOneRight="150px"
-        cloudTwoTop="-430px"
-        cloudTwoRight="-90px"
-        cloudThreeTop="-140px"
-        cloudThreeRight="60px"
-      /> */}
     </>
   )
 }
