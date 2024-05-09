@@ -27,7 +27,7 @@ const Mobile_BlogCards:React.FC<businessBlogsProps> = ({title, introTextContent,
             objectFit: 'cover'
         }
     }}>
-        <img id='business_blog_img'src={`${image}`}/>
+        <img id='business_blog_img'src={`${image}`} alt='Blog Image'/>
         <Box sx={{marginTop: '0.7rem'}}>            
             <Box sx={{
                 fontSize: '1.2rem',
