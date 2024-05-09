@@ -19,7 +19,7 @@ function HomePage() {
       }}>
         <Box>
          <Box sx={{
-              backgroundImage: "url('public/assets/Nebula AWS Logo Icon.png')",
+              backgroundImage: "url('/assets/Nebula AWS Logo Icon.png')",
               height: '300px',
               width: '489px',
               marginRight: '1.5rem'
@@ -82,7 +82,7 @@ function HomePage() {
                 cursor: 'pointer'
             }
         }}>
-            <img id='business_img' src='public/assets/BusinessImage.png' alt='Business Blogs Image' />
+            <img id='business_img' src='/assets/BusinessImage.png' alt='Business Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -111,7 +111,7 @@ function HomePage() {
                 cursor: 'pointer'
             }
             }}>
-            <img id='AWS_img' src='public/assets/AWSImage.png' alt='Cloud Blogs Image' />
+            <img id='AWS_img' src='/assets/AWSImage.png' alt='Cloud Blogs Image' />
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',

@@ -29,7 +29,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     The AWS Well-Architected Framework is not just about using AWS services; it's about rethinking how to design systems and processes in a cloud-native way. By adopting these principles, businesses not only improve efficiency and reduce costs but also enhance their ability to innovate and respond to market changes effectively. As cloud technology continues to evolve, so too should the strategies we use to manage it. Embracing these principles offers a pathway to robust, flexible, and future-ready architectures that can drive a business forward in the digital age.`,
     introTextContent: 'In today’s rapidly evolving digital landscape, businesses are increasingly turning to the cloud to meet their complex and dynamic needs. Amazon Web Services (AWS) has developed the Well-Architected Framework, a comprehensive guide designed to help cloud architects build secure, high-performing, resilient, and efficient infrastructure for their applications.',
-    image: 'public/assets/GDPImage.webp',
+    image: '/assets/GDPImage.webp',
     id: 2
 },
 {
@@ -68,7 +68,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     Operational excellence on AWS is an ongoing journey that involves strategic planning, continuous improvement, and leveraging advanced cloud tools. By adhering to the AWS Well-Architected Framework's principles for operational excellence, businesses can ensure that their cloud infrastructure is not only robust and secure but also agile and aligned with their long-term goals. Embrace these practices to maximize your AWS investment and drive sustained business success.`,
     introTextContent: `In today's digital ecosystem, operational excellence in cloud environments is not just beneficial; it's essential for staying competitive.`,
-    image: 'public/assets/OEImage.webp',
+    image: '/assets/OEImage.webp',
     id: 4
 },
 {
@@ -108,7 +108,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     By thoroughly understanding and implementing these AWS design principles and best practices, organizations can ensure their cloud environments are secure, resilient, and aligned with industry standards. Embrace these strategies to not only mitigate risks but also enhance the operational efficiency and security posture of your AWS deployments.`,
     introTextContent: `In the dynamic world of cloud computing, security remains a paramount concern for businesses leveraging platforms like Amazon Web Services (AWS).`,
-    image: 'public/assets/SImage.webp',
+    image: '/assets/SImage.webp',
     id: 6
 },
 {
@@ -143,7 +143,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     Building reliable architectures on AWS involves a combination of well-thought-out design principles and rigorous best practices. By leveraging AWS’s comprehensive suite of services and tools, organizations can create systems that not only withstand and recover from failures but also adapt and scale efficiently in response to changing operational demands. Remember, reliability is not just a feature; it is the foundation of successful cloud architecture.`,
     introTextContent: `In the cloud-first world, the reliability of architectures is important for businesses to maintain continuous operation and deliver enhanced customer experiences.`,
-    image: 'public/assets/RImage.webp',
+    image: '/assets/RImage.webp',
     id: 8
 },
 {
@@ -174,7 +174,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     Implementing these principles and practices for performance efficiency on AWS not only maximizes resource utilization but also significantly enhances the responsiveness and scalability of applications. By strategically leveraging AWS services and continuously refining your deployment based on performance metrics, your organization can achieve an optimal balance between performance, cost, and delivery speed in the cloud.`,
     introTextContent: `In the competitive realm of cloud computing, performance efficiency is critical for optimizing resource utilization and ensuring responsive, cost-effective service delivery.`,
-    image: 'public/assets/PEImage.webp',
+    image: '/assets/PEImage.webp',
     id: 10
 },
 {
@@ -207,7 +207,7 @@ export const cloudBlogs: cloudBlogsProps[]= [
     
     Optimizing costs in AWS is not a set-it-and-forget-it activity; it’s an ongoing process of evaluation and adjustment. By adhering to these principles and best practices, organizations can ensure that they are not only keeping their cloud expenditures under control but also continually enhancing the value they derive from AWS. Implementing the strategies outlined above will empower your teams to innovate more freely and effectively, turning cloud cost management into a strategic advantage.`,
     introTextContent: `In today’s digital transformation era, where cloud computing has become the backbone of many businesses, managing cloud expenses effectively is paramount.`,
-    image: 'public/assets/COImage.webp',
+    image: '/assets/COImage.webp',
     id: 12
 },
 {
@@ -240,7 +240,7 @@ Creating a culture that prioritizes sustainability involves continuous learning,
 
 Sustainability in cloud computing is about making informed, strategic decisions that not only optimize business outcomes but also minimize environmental impact. By following these principles and best practices, AWS users can lead the way in creating a more sustainable future. Embracing this challenge not only meets increasing regulatory and consumer expectations but also drives innovation, leading to more resilient and adaptable business operations.`,
     introTextContent: `In the era of rapid technological advancement, sustainability in cloud computing is not just a corporate responsibility but also a strategic asset that can distinguish companies in a competitive market.`,
-    image: 'public/assets/SUSImage.webp',
+    image: '/assets/SUSImage.webp',
     id: 14
 }
 ]
